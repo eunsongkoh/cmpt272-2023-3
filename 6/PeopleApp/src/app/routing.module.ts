@@ -5,18 +5,16 @@ import { PeopleListComponent } from './people-list/people-list.component';
 import { PersonAddFormComponent } from './person-add-form/person-add-form.component';
 import { PersonEditComponent } from './person-edit/person-edit.component';
 
-const appRoutes:Routes = [
+
+const appRoutes: Routes = [
   { path: 'people', component: PeopleListComponent },
   { path: 'person/add', component: PersonAddFormComponent },
-  { path: 'person/:name', component: PersonEditComponent }
-]
+  { path: 'person/:name', component: PersonEditComponent },
+];
 
 @NgModule({
   declarations: [],
-  imports: [
-    CommonModule,
-    RouterModule.forRoot(appRoutes)
-  ],
-  exports: [RouterModule]
+  imports: [CommonModule, RouterModule.forRoot(appRoutes)],
+  exports: [RouterModule],
 })
-export class RoutingModule { }
+export class RoutingModule {}

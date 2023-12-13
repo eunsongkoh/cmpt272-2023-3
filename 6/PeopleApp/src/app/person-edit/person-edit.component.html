@@ -1,1 +1,19 @@
-<p>person-edit {{ personsName }}</p>
+<h1>Edit a Person</h1>
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <label for="theName">Change Name </label>
+  <input
+    name="theName"
+    type="text"
+    formControlName="name"
+    class="form-control"
+  />
+  <br />
+  <label for="inst">Change Instructor/Student Status </label>
+  <select formControlName="inst" name="inst" class="form-control">
+    <option>Instructor</option>
+    <option>Student</option>
+  </select>
+  <br />
+  <button type="submit" [disabled]="!form.valid">Submit</button>
+</form>
+<button (click)="back()">Home</button>

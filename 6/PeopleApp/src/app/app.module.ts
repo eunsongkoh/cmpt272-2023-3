@@ -13,6 +13,7 @@ import { PersonAddFormComponent } from './person-add-form/person-add-form.compon
 import { PeopleService } from './people.service';
 import { RoutingModule } from './routing.module';
 import { PersonEditComponent } from './person-edit/person-edit.component';
+import { EditComponent } from './edit/edit.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { PersonEditComponent } from './person-edit/person-edit.component';
     CountPeoplePipe,
     SearchPipe,
     PersonAddFormComponent,
-    PersonEditComponent
+    PersonEditComponent,
+    EditComponent
   ],
   imports: [
     BrowserModule,

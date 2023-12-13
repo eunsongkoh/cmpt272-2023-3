@@ -1,0 +1,7 @@
+<h1>Edit a Person</h1>
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <label for="theName">Who would you like to edit?</label>
+  <input name="theName" type="text" formControlName="name" />
+
+  <label for="inst">Change their Name</label>
+</form>
